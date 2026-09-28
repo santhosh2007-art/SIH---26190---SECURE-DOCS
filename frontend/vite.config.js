@@ -18,19 +18,11 @@ const proxyRoutes = [
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: './',
   build: {
     outDir: '../static',
     emptyOutDir: true,
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          if (id.includes('node_modules/react') || id.includes('node_modules/react-dom')) {
-            return 'react-vendor';
-          }
-        },
-      },
-    },
-    chunkSizeWarningLimit: 600,
+    chunkSizeWarningLimit: 2000,
   },
   server: {
     port: 3000,

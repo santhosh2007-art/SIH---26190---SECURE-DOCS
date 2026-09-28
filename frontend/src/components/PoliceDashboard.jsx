@@ -441,9 +441,9 @@ function MyCasesView({ cases, onSelect, onDelete, onNav, initialStatusFilter = '
         <button
           onClick={() => onNav('createcase')}
           className="btn-primary"
-          style={{ display: 'flex', alignItems: 'center', gap: 8 }}
+          style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#ffffff' }}
         >
-          <span>+ REGISTER NEW CASE</span>
+          <span style={{ color: '#ffffff' }}>+ REGISTER NEW CASE</span>
         </button>
       </div>
 

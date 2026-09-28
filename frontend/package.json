@@ -9,17 +9,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@rolldown/binding-win32-x64-msvc": "^1.2.11",
+    "@tailwindcss/vite": "^4.2.2",
+    "lucide-react": "^0.475.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-router-dom": "^7.14.0",
-    "lucide-react": "^0.475.0",
-    "tailwindcss": "^4.2.2",
-    "@tailwindcss/vite": "^4.2.2"
+    "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.1",
-    "vite": "^8.0.4"
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
   }
 }

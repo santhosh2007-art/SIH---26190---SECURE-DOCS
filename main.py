@@ -9,7 +9,12 @@ Start with:  uvicorn main:app --host 0.0.0.0 --port 8000
 from __future__ import annotations
 import asyncio
 import os
+import mimetypes
 from contextlib import asynccontextmanager
+
+# Override Windows default MIME type for JavaScript files
+mimetypes.add_type("text/javascript", ".js")
+mimetypes.add_type("text/css", ".css")
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -90,9 +95,9 @@ app.include_router(search.router)
 
 # ── SPA static files (served last so API routes take priority) ────────────────
 
-os.makedirs("./static", exist_ok=True)
+os.makedirs("./static/assets", exist_ok=True)
+app.mount("/assets", StaticFiles(directory="./static/assets"), name="assets")
 
-# Serve index.html with no-cache so browser always fetches the latest JS/CSS hashes
 from fastapi.responses import FileResponse
 from fastapi import Request
 
