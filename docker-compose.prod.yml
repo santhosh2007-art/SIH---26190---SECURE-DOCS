@@ -1,6 +1,6 @@
 services:
   docusync:
-    image: ${DOCUSYNC_IMAGE:-ghcr.io/rizwanahamed13/docusync:latest}
+    image: ${DOCUSYNC_IMAGE:-ghcr.io/santhosh2007-art/sih---26190---secure-docs:latest}
     container_name: docusync
     restart: unless-stopped
     ports:

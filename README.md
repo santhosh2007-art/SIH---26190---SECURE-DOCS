@@ -97,7 +97,7 @@ export DOCUSYNC_DB_PATH=/path/to/document_metadata.db
 The repository builds a production Docker image and publishes it to:
 
 ```text
-ghcr.io/rizwanahamed13/docusync:latest
+ghcr.io/santhosh2007-art/sih---26190---secure-docs:latest
 ```
 
 GitHub Actions:

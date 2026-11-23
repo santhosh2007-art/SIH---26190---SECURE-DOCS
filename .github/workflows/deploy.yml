@@ -6,7 +6,7 @@ on:
       image:
         description: Image to deploy
         required: false
-        default: ghcr.io/rizwanahamed13/docusync:latest
+        default: ghcr.io/santhosh2007-art/sih---26190---secure-docs:latest
 
 jobs:
   deploy:

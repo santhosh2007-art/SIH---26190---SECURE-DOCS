@@ -604,7 +604,7 @@ flowchart TB
 | Compose file | Image | Data location | Port |
 |---|---|---|---|
 | `docker-compose.yml` | local build | `./uploads`, `./vector_store`, `./document_metadata.db` | 8000 + nginx 80 |
-| `docker-compose.prod.yml` | `ghcr.io/rizwanahamed13/docusync:latest` | `/opt/docusync/data/*` | `${APP_PORT:-80} → 8000` |
+| `docker-compose.prod.yml` | `ghcr.io/santhosh2007-art/sih---26190---secure-docs:latest` | `/opt/docusync/data/*` | `${APP_PORT:-80} → 8000` |
 
 ### 10.3 CI/CD
 
